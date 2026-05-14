@@ -2,13 +2,18 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
+  font-family:'Inter',sans-serif;
 }
 
 body{
   background:#ffffff;
   color:#111;
 }
+
+html{
+  scroll-behavior:smooth;
+}
+
 
 /* NAVBAR */
 
@@ -78,11 +83,67 @@ nav a.active::after{
   gap:40px;
 }
 
+/* HERO IMAGE */
+
 .hero-image img{
   width:350px;
-  border-radius:15px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+  border-radius:22px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.15);
+  transition:0.4s;
 }
+
+.hero-image img:hover{
+  transform:scale(1.02);
+}
+
+
+/* HERO IMPROVEMENTS */
+
+.hero-role{
+  color:#2563eb;
+  margin:10px 0 15px;
+  font-size:28px;
+}
+
+.hero-description{
+  max-width:650px;
+  color:#475569;
+  line-height:1.8;
+  margin-bottom:25px;
+  font-size:16px;
+}
+
+/* RESEARCH TAGS */
+
+.hero-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:25px 0;
+}
+
+.hero-tags span{
+  background:#eff6ff;
+  color:#2563eb;
+  padding:10px 16px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:500;
+  border:1px solid #bfdbfe;
+  transition:0.3s;
+}
+
+.hero-tags span:hover{
+  background:#2563eb;
+  color:white;
+  transform:translateY(-2px);
+}
+
+
+
+
+
+
 
 /* cards images consistency */
 
@@ -206,6 +267,10 @@ nav a.active::after{
 }
 
 
+
+
+
+
 /* COLLAPSIBLE EDUCATION DETAILS */
 
 .edu-details{
@@ -248,6 +313,12 @@ nav a.active::after{
   margin-bottom:12px;
   color:#475569;
 }
+
+
+
+
+
+
 
 
 
