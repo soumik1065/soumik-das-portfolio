@@ -31,7 +31,7 @@
     <p><b>Department:</b> Dipartimento di Scienze Ambientali, Informatica e Statistica </p>
     <p><b>Duration:</b>01/10/2025 - 17/12/2025</p>
 
-    <ul style="margin-top:10px; color:#475569; padding-left:20px;">
+    <!-- <ul style="margin-top:10px; color:#475569; padding-left:20px;">
       <li><b>Project Entitled: </b>"A Drone Swarm Protocol for GPS Spoofing Detection"</li>
       <li><b>Project Description: </b>This project aims to developed a lightweight and fully distributed GPS spoofing detection protocol for UAV swarms operating in FANETs. 
         The system combines physical-layer verification using RSSI-based trilateration and AoA-based triangulation with Practical Byzantine Fault Tolerance (PBFT) consensus to collaboratively identify spoofed drones. 
@@ -40,7 +40,40 @@
         <li><b>Supervisor: </b>Prof. Agostino Cortesi, Professor, DAIS, Università Ca Foscari Venezia</li>
         <li><b>Fellowship Amount: </b>€ 4100  </li>
  
-    </ul>
+    </ul> -->
+
+    <div class="edu-details">
+
+  <button class="collapse-btn">
+    View Details
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
+  <div class="collapse-content">
+
+    <p>
+      <b>Project Entitled:</b>
+      "A Drone Swarm Protocol for GPS Spoofing Detection"
+    </p>
+
+    <p>
+      <b>Project Description:</b>
+      This project aims to developed a lightweight and fully distributed GPS spoofing detection protocol for UAV swarms operating in FANETs. 
+        The system combines physical-layer verification using RSSI-based trilateration and AoA-based triangulation with Practical Byzantine Fault Tolerance (PBFT) consensus to collaboratively identify spoofed drones. 
+        The approach eliminates dependence on a central controller or machine learning models, reduces false positives, and is suitable for real-time deployment on resource-constrained UAV platforms. 
+        Validated through multi-UAV simulations with dynamic mobility.
+    </p>
+
+    <p>
+      <b>Supervisor:</b>
+      Prof. Agostino Cortesi, Professor, DAIS,
+      Università Ca Foscari Venezia
+    </p>
+
+    <p>
+      <b>Fellowship Amount:</b>
+      € 4100
+    </p>
 
     <center>
           <div class="hero-image">
@@ -48,6 +81,12 @@
           </div>
           <p><b>Along with Prof. Agostino Cortesi</b></p>
     </center>
+
+  </div>
+
+</div>
+
+
 
   </div>
 
@@ -62,7 +101,7 @@
     <p><b>Department:</b> School of Mobile Computing and Communication </p>
     <p><b>Duration:</b>31/07/2023 - 31/08/2025</p>
 
-    <ul style="margin-top:10px; color:#475569; padding-left:20px;">
+    <!-- <ul style="margin-top:10px; color:#475569; padding-left:20px;">
       <li><b>Project Entitled: </b>"Path planning for drones flying beyond visual line of sight (BVLoS)" </li>
       <li><b>Project Description: </b>This project aims to improve the safety and efficiency of UAV operations conducted beyond the operator’s direct visibility, which are vital for applications such as infrastructure inspection, agriculture, disaster management, and delivery services. 
         The work focuses on developing a risk-based path planning framework that generates grid-based risk maps by considering factors like no-fly zones, population density, sheltering conditions, obstacle heights, and probabilities of crash, impact, and fatality. 
@@ -71,7 +110,35 @@
         This project provides a foundation for advancing safer BVLoS drone missions, with future work focusing on dynamic risk assessment under real-time conditions.  </li>
         <li><b>Supervisor: </b>Prof. Punyasha Chatterjee, Professor and Director, SMCC, Jadavpur University </li>
  
-    </ul>
+    </ul> -->
+
+    <div class="edu-details">
+
+  <button class="collapse-btn">
+    View Details
+    <i class="fa-solid fa-chevron-down"></i>
+  </button>
+
+  <div class="collapse-content">
+
+    <p>
+      <b>Project Entitled:</b>
+      "Path planning for drones flying beyond visual line of sight (BVLoS)"
+    </p>
+
+    <p>
+      <b>Project Description:</b>
+      This project aims to improve the safety and efficiency of UAV operations conducted beyond the operator’s direct visibility, which are vital for applications such as infrastructure inspection, agriculture, disaster management, and delivery services. 
+        The work focuses on developing a risk-based path planning framework that generates grid-based risk maps by considering factors like no-fly zones, population density, sheltering conditions, obstacle heights, and probabilities of crash, impact, and fatality. 
+        Implemented through simulations in urban, sub-urban, and rural regions using a C program, the study revealed that the sheltering factor is the most critical parameter, with higher shelter values (e.g., buildings) reducing risks, while open areas exhibit the highest risks. 
+        The results show that effective BVLoS operations require not only robust navigation technologies but also comprehensive risk evaluation strategies. 
+        This project provides a foundation for advancing safer BVLoS drone missions, with future work focusing on dynamic risk assessment under real-time conditions.
+    </p>
+
+    <p>
+      <b>Supervisor:</b>
+      Prof. Punyasha Chatterjee, Professor and Director, SMCC, Jadavpur University
+    </p>
 
     <center>
           <div class="hero-image">
@@ -79,6 +146,12 @@
           </div>
           <p><b>Internship Completion Certificate</b></p>
     </center>
+
+  </div>
+
+</div>
+
+
 
   </div>
 
@@ -148,6 +221,34 @@
   </div>
 
 </footer>
+
+
+
+<script>
+
+const collapseBtns = document.querySelectorAll(".collapse-btn");
+
+collapseBtns.forEach(btn => {
+
+  btn.addEventListener("click", () => {
+
+    const content = btn.nextElementSibling;
+
+    if(content.style.display === "block"){
+      content.style.display = "none";
+    }
+    else{
+      content.style.display = "block";
+    }
+
+  });
+
+});
+
+</script>
+
+
+
 
 </body>
 </html>
