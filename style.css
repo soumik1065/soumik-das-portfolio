@@ -269,6 +269,76 @@ nav a.active::after{
 
 
 
+/* RECENT UPDATE CARDS */
+
+.update-card{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  gap:15px;
+}
+
+.update-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.update-date{
+  font-size:13px;
+  color:#94a3b8;
+  font-weight:500;
+}
+
+.update-card h3{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#111827;
+  font-size:20px;
+}
+
+.update-text{
+  color:#475569;
+  line-height:1.7;
+  font-size:15px;
+}
+
+.update-meta{
+  margin-top:5px;
+}
+
+.update-meta p{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:8px;
+  color:#64748b;
+  font-size:14px;
+}
+
+.update-link{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  width:fit-content;
+  margin-top:10px;
+  padding:10px 16px;
+  border-radius:10px;
+  background:#eff6ff;
+  color:#2563eb;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.update-link:hover{
+  background:#2563eb;
+  color:white;
+}
+
+
+
 
 
 /* COLLAPSIBLE EDUCATION DETAILS */
