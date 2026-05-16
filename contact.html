@@ -75,16 +75,148 @@
 
     </div>
 
-    <!-- RIGHT SIDE -->
+<!-- 
+    <form class="contact-form"
+      action="https://formsubmit.co/dassoumik.2341@gmail.com"
+      method="POST">
+
+
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+
+
+  <input type="text" name="_honey" style="display:none">
+
+  <input type="hidden"
+         name="_next"
+         value="https://soumik1065.github.io/soumik-das-portfolio/thankyou.html">
+
+  <div class="form-group">
+    <label>Full Name</label>
+    <input type="text"
+           name="name"
+           placeholder="Enter your name"
+           required>
+  </div>
+
+  <div class="form-group">
+    <label>Email Address</label>
+    <input type="email"
+           name="email"
+           placeholder="Enter your email"
+           required>
+  </div>
+
+  <div class="form-group">
+    <label>Subject</label>
+    <input type="text"
+           name="subject"
+           placeholder="Enter subject">
+  </div>
+
+  <div class="form-group">
+    <label>Message</label>
+    <textarea rows="6"
+              name="message"
+              placeholder="Write your message here..."
+              required></textarea>
+  </div>
+
+  <button type="submit" class="btn primary">
+    Send Message
+  </button>
+
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="contact-right ">
 
       <div class="form-box">
         <h2><i class="fa-solid fa-envelope"></i> Send a Message</h2>
         <form class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST">
+
+          <!-- Web3Forms Access Key -->
+          <input type="hidden"
+                name="access_key"
+                value="6dc09883-c97b-473c-a98e-987ed4af7061">
+
+          <!-- Email Subject -->
+          <input type="hidden"
+                name="subject"
+                value="New Portfolio Contact Message">
+
+          <!-- Redirect -->
+          <input type="hidden"
+                name="redirect"
+                value="https://soumik1065.github.io/soumik-das-portfolio/thankyou.html">
+
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox"
+                name="botcheck"
+                style="display: none;">
+
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required>
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required>
+          </div>
+
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text"
+                  name="user_subject"
+                  placeholder="Enter subject">
+          </div>
+
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="6"
+                      name="message"
+                      placeholder="Write your message here..."
+                      required></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">
+            Send Message
+          </button>
+
+        </form>
+
+
+
+
+
+
+
+        <!-- <form class="contact-form"
               action="https://formsubmit.co/dassoumik.2341@gmail.com"
               method="POST">
 
-          <!-- Hidden Settings -->
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
           <input type="hidden"
@@ -126,7 +258,7 @@
             Send Message
           </button>
 
-        </form>
+        </form> -->
       </div>
 
     </div>
