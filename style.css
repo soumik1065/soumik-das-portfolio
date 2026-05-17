@@ -229,6 +229,7 @@ nav a.active::after{
   transition:0.3s;
   position:relative;
   z-index:1;
+  width: auto;
 }
 
 .card:hover{
@@ -865,7 +866,7 @@ textarea{
    MOBILE VIEW
 ========================================= */
 
-@media(max-width: 1100px){
+/* @media(max-width: 1100px){
 
   nav{
     padding:18px 6%;
@@ -914,7 +915,7 @@ textarea{
 
   /* HERO SECTION */
 
-  .hero{
+  /* .hero{
     flex-direction:column;
     text-align:center;
     padding:50px 8%;
@@ -942,37 +943,37 @@ textarea{
 
   .social-icons{
     justify-content:center;
-  }
+  } */
 
 
 
   /* SECTION */
 
-  .section{
+  /* .section{
     padding:60px 8%;
   }
 
   .title{
     font-size:28px;
-  }
+  } */
 
 
 
   /* CONTACT PAGE */
 
-  .contact-grid{
+  /* .contact-grid{
     grid-template-columns:1fr;
   }
 
   .form-box{
     min-height:500px;
-  }
+  } */
 
 
 
   /* FOOTER */
 
-  .footer{
+  /* .footer{
     padding:50px 8%;
   }
 
@@ -987,9 +988,9 @@ textarea{
   flex-direction: column;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
- }
+ } */
 
-}
+/* } */
 
 
 
@@ -997,7 +998,7 @@ textarea{
    SMALL MOBILE DEVICES
 ========================================= */
 
-@media(max-width: 576px){
+/* @media(max-width: 576px){
 
   .hero-image img{
     width:220px;
@@ -1029,6 +1030,238 @@ textarea{
 
   .title{
     font-size:24px;
+  }
+
+} */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================
+   MOBILE VIEW
+========================================= */
+
+@media(max-width: 1100px){
+
+  /* NAVBAR */
+
+  nav{
+    padding:18px 6%;
+  }
+
+  .hamburger{
+    display:flex;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#ffffff;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:25px;
+
+    padding:30px 0;
+
+    border-top:1px solid #e5e7eb;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-15px);
+
+    transition:0.3s;
+  }
+
+  .nav-links.active{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+    background-color:#f1f5f9;
+  }
+
+  .nav-links a{
+    margin:0;
+    font-size:25px;
+  }
+
+  .logo{
+    font-size:40px;
+  }
+
+
+
+  /* HERO SECTION */
+
+  .hero{
+    flex-direction:column;
+    text-align:center;
+    padding:50px 8%;
+  }
+
+  .hero-image img{
+    width: 500px;
+    max-width:100%;
+  }
+
+  .hero h1{
+    font-size:50px;
+  }
+
+  .hero-role{
+    font-size:30px;
+  }
+
+  .hero-description{
+    max-width:100%;
+    font-size:18px;
+    line-height:1.7;
+  }
+
+  .hero p{
+    max-width:100%;
+    margin-bottom:20px;
+  }
+
+  .hero-tags{
+    justify-content:center;
+    gap:10px;
+  }
+
+  .hero-tags span{
+    font-size:16px;
+    padding:8px 14px;
+  }
+
+
+  body h3,a{
+    font-size: 20px;
+  }
+
+ .card p, .section p{
+  font-size: 20px;
+ }
+
+
+
+  /* SOCIAL ICONS */
+
+  .social-icons{
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+  }
+
+  .social-icons a{
+    width:58px;
+    height:58px;
+  }
+
+  .social-icons img{
+    width:28px;
+    height:28px;
+  }
+
+
+
+  /* BUTTONS */
+
+  .btn{
+    margin-bottom:12px;
+    text-align:center;
+  }
+
+
+
+  /* SECTIONS */
+
+  .section{
+    padding:60px 8%;
+  }
+
+  .title{
+    font-size:28px;
+  }
+
+
+
+  /* GRID */
+
+  .grid{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+  }
+
+
+  .card img{
+    width: 100%;
+  }
+
+
+
+  /* CONTACT PAGE */
+
+  .contact-grid{
+    /* grid-template-columns:1fr; */
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+  }
+
+  .form-box{
+    min-height:500px;
+  }
+
+
+
+  /* FOOTER */
+
+  .footer{
+    padding:50px 8%;
+  }
+
+  .footer-container{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .footer h3{
+    font-size:24px;
+  }
+
+  .footer h4{
+    font-size:20px;
+  }
+
+  .footer p{
+    font-size:18px;
+    line-height:1.7;
+  }
+
+
+  .footer-bottom{
+    margin-top:30px;
+    text-align:center;
+  }
+
+  .contact-left{
+    height: max-content;
   }
 
 }
