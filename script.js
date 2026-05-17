@@ -1,55 +1,30 @@
-// MOBILE MENU
 
-const menuBtn = document.getElementById("menu-btn");
-const navbar = document.getElementById("navbar");
+const collapseBtns = document.querySelectorAll(".collapse-btn");
 
-menuBtn.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-});
+collapseBtns.forEach(btn => {
 
-// NAVBAR BACKGROUND ON SCROLL
+  btn.addEventListener("click", () => {
 
-window.addEventListener("scroll", () => {
+    const content = btn.nextElementSibling;
 
-  const header = document.querySelector(".header");
-
-  if(window.scrollY > 50){
-    header.style.background = "#020617";
-  }
-  else{
-    header.style.background = "rgba(15,23,42,0.9)";
-  }
-
-});
-
-// SIMPLE FADE-IN ANIMATION
-
-const cards = document.querySelectorAll(
-  ".research-card, .project-card, .publication-card, .stat-card"
-);
-
-window.addEventListener("scroll", () => {
-
-  cards.forEach(card => {
-
-    const position = card.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight / 1.2;
-
-    if(position < screenPosition){
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
+    if(content.style.display === "block"){
+      content.style.display = "none";
+    }
+    else{
+      content.style.display = "block";
     }
 
   });
 
 });
 
-// INITIAL STATE
 
-cards.forEach(card => {
 
-  card.style.opacity = "0";
-  card.style.transform = "translateY(40px)";
-  card.style.transition = "0.6s";
 
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("active");
 });
