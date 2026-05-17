@@ -11,15 +11,25 @@
 <!-- NAVBAR -->
 <nav>
   <div class="logo">Soumik Das</div>
-  <div>
-    <a href="index.html">Home</a>
-    <a href="education.html" class="active">Education</a>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Nav Links -->
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="active">Home</a>
+    <a href="education.html">Education</a>
     <a href="experience.html">Experience</a>
     <a href="publications.html">Publications</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </div>
 </nav>
+
 
 <!-- CONTENT -->
 <section class="section">
@@ -36,9 +46,9 @@
       </div>
 
     <h3>Master of Technology (M.Tech)</h3>
+    <p><b><i class="fa-solid fa-location-dot"></i></b> Kolkata, West Bengal, India</p>
     <p><b><i class="fa-solid fa-building-columns"></i></b> School of Mobile Computing and Communication</p>
     <p><b><i class="fa-solid fa-graduation-cap"></i></b> Distributed & Mobile Computing</p>
-    <p><b><i class="fa-solid fa-location-dot"></i></b> Kolkata, West Bengal, India</p>
     
 
     <div class="edu-details">
@@ -82,9 +92,9 @@
       </div>
 
     <h3>Bachelor of Technology (B.Tech)</h3>
+    <p><b><i class="fa-solid fa-location-dot"></i></b> Kolkata, West Bengal, India</p>
     <p><b><i class="fa-solid fa-building-columns"></i></b> School of Engineering and Technology</p>
     <p><b><i class="fa-solid fa-graduation-cap"></i></b> Computer Science and Engineering</p>
-    <p><b><i class="fa-solid fa-location-dot"></i></b> Kolkata, West Bengal, India</p>
 
     
     <div class="edu-details">
@@ -111,12 +121,11 @@
 
 
     <p>
-    <a class="update-link"
-    href="https://github.com/soumik1065/Development-of-an-Automated-Prediction-Model-of-Skin-Abnormalities-from-Photographic-Images/tree/main"
-    target="_blank">
-         <i class="fa-solid fa-arrow-up-right-from-square"></i>
-         Know More
-    </a>      
+      <b>GitHub Link:</b>
+      <a href="https://github.com/soumik1065/Development-of-an-Automated-Prediction-Model-of-Skin-Abnormalities-from-Photographic-Images/tree/main"
+         target="_blank">
+         View Project Repository
+      </a>
     </p>
 
     <center>
@@ -200,34 +209,7 @@
 </footer>
 
 
-
-<script>
-
-const collapseBtns = document.querySelectorAll(".collapse-btn");
-
-collapseBtns.forEach(btn => {
-
-  btn.addEventListener("click", () => {
-
-    const content = btn.nextElementSibling;
-
-    if(content.style.display === "block"){
-      content.style.display = "none";
-    }
-    else{
-      content.style.display = "block";
-    }
-
-  });
-
-});
-
-</script>
-
-
-
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
