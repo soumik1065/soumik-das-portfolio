@@ -11,10 +11,19 @@
 <!-- NAVBAR -->
 <nav>
   <div class="logo">Soumik Das</div>
-  <div>
-    <a href="index.html">Home</a>
+
+  <!-- Hamburger -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Nav Links -->
+  <div class="nav-links" id="navLinks">
+    <a href="index.html" class="active">Home</a>
     <a href="education.html">Education</a>
-    <a href="experience.html" class="active">Experience</a>
+    <a href="experience.html">Experience</a>
     <a href="publications.html">Publications</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
@@ -31,8 +40,8 @@
         <p><b><i class="fa-solid fa-calendar"></i></b> 01/10/2025 - 17/12/2025</p>
       </div>
     <h3>Università Ca' Foscari Venezia</h3>
-    <p><b><i class="fa-solid fa-building-columns"></i></b> Dipartimento di Scienze Ambientali, Informatica e Statistica </p>
     <p><b><i class="fa-solid fa-location-dot"></i></b> Campus Scientifico Via Torino 155, 30172 Venice Mestre, Italy</p>
+    <p><b><i class="fa-solid fa-building-columns"></i></b> Dipartimento di Scienze Ambientali, Informatica e Statistica </p>
 
     <div class="edu-details">
 
@@ -83,8 +92,8 @@
         <p><b><i class="fa-solid fa-calendar"></i></b> 31/07/2023 - 31/08/2025</p>
       </div>
     <h3>Jadavpur University</h3>
-    <p><b><i class="fa-solid fa-building-columns"></i></b> School of Mobile Computing and Communication </p>
     <p><b><i class="fa-solid fa-location-dot"></i></b> Jadavpur University Salt Lake Campus, Kolkata – 700106, West Bengal</p>
+    <p><b><i class="fa-solid fa-building-columns"></i></b> School of Mobile Computing and Communication </p>
 
     <div class="edu-details">
 
@@ -188,32 +197,7 @@
 </footer>
 
 
-
-<script>
-
-const collapseBtns = document.querySelectorAll(".collapse-btn");
-
-collapseBtns.forEach(btn => {
-
-  btn.addEventListener("click", () => {
-
-    const content = btn.nextElementSibling;
-
-    if(content.style.display === "block"){
-      content.style.display = "none";
-    }
-    else{
-      content.style.display = "block";
-    }
-
-  });
-
-});
-
-</script>
-
-
-
+<script src="script.js"></script>
 
 </body>
 </html>
